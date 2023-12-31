@@ -7,7 +7,6 @@ const Books = () => {
   const getBooks = async () => {
     const response = await fetch("http://localhost/api/book/getbooks");
     const json = await response.json();
-    console.log(json);
     setBooks(json.books);
   };
 

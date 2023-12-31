@@ -18,7 +18,6 @@ const AddBook = () => {
     });
 
     const json = await response.json();
-    console.log(json);
     if (json.success) {
       toast.success(json.message);
       setInfo({ name: "", author: "" });

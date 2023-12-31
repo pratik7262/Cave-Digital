@@ -10,7 +10,6 @@ import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 
 const BookCard = ({ book, setBooks, isBorrowed }) => {
-  console.log(book);
   const [isAdmin] = useState(localStorage.getItem("isAdmin") === "true");
 
   const borrowBook = async () => {
