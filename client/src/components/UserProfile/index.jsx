@@ -26,7 +26,6 @@ export const UserProfile = () => {
     });
     const json = await res.json();
     localStorage.getItem("token");
-    console.log(json);
     localStorage.setItem("userName", json.user.name);
     localStorage.setItem("isAdmin", json.user.isAdmin);
   };
